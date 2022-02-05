@@ -1,0 +1,78 @@
+import pandas as pds
+import numpy as np
+print(pds.__version__)
+
+import pandas as pds
+s=pds.Series([2,3,7,8])
+print(s)
+
+import pandas as pds
+df=pds.DataFrame({'A':[1,2,3,4],'B':[4,5,6,7],'C':[8,9,10,11]})
+print(df)
+
+import pandas as pds
+data={
+    "potato":[12,11,16,17],
+    "tomato":[13,16,19,20]
+}
+df= pds.DataFrame(data, index = ['week1','week2','week3','week4'])
+print(df)
+
+
+import pandas as pds
+data={
+    "course name":["MCA","MTECH","BTECH","ECE"]
+}
+df= pds.DataFrame(data, index = ['course1','course2','course3','course4'])
+print(df)
+
+
+
+import pandas as pds
+s=pds.Series(["anila","anju"])
+print(s)
+
+
+import pandas as pd
+print("mul table of 2")
+a=[i for i in range(0,11)]
+ns=pd.Series(a)
+mul=ns.multiply(other=2)
+print(mul)
+import pandas as pd
+print("mul table of 3")
+a=[i for i in range(0,11)]
+ns=pd.Series(a)
+mul=ns.multiply(other=3)
+print(mul)
+
+
+
+import pandas as pd
+data={
+    'Studname':["anu","vinu","basu"],
+    'Grade':["A","B","C"],
+    'Percentage':[90,78,90]
+}
+py=pd.DataFrame(data)
+print(py)
+
+
+
+
+
+
+
+import pandas as pd
+data={
+    'Studname':["anu","vinu","basu"],
+    'Grade':["A","B","C"],
+    'Percentage':[90,78,90]
+}
+py=pd.DataFrame(data)
+print(py)
+
+
+
+
+
