@@ -1,0 +1,11 @@
+import numpy as p
+#create a matrix A
+A=p.array([[3,4,5],[1,2,3],[4,2,1]])
+#performing svd
+U,D,VT=p.linalg.svd(A)
+#CHECKING IF WE CAN REMAKE THE ORIGINAL MATRIX USING U,D,VT
+Aremake=(U@p.diag(D)@VT)
+print(U)
+print(D)
+print(VT)
+print(Aremake)
