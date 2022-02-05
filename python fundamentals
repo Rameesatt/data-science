@@ -1,0 +1,20 @@
+import numpy
+arr=numpy.array([1,2,3,4])
+print(arr)
+
+import numpy
+arr=numpy.array((1,2,3,4))
+print(arr)
+
+import numpy as p
+arr=p.array([1,2,3,4])
+print(arr)
+
+import numpy as np
+arr=p.array([1,2,3,4])
+print(arr)
+print(type(arr))
+
+import numpy as np
+arr=p.array(42)
+print(arr)
