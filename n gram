@@ -1,4 +1,4 @@
-mport re, pprint, string
+import re, pprint, string
 import pandas as pd
 from nltk import word_tokenize, sent_tokenize
 import nltk
