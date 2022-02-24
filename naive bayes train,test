@@ -1,0 +1,20 @@
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.naive_bayes import GaussianNB
+iris=load_iris()
+x_train,x_test,y_train,y_test=train_test_split(iris.data,iris.target,test_size=0.25)
+#create a gaussian nb classifier
+gnb=GaussianNB()
+#train the model using training set 
+gnb.fit(x_train,y_train)
+#predict the response for test data set
+y_predict=gnb.predict(x_test)
+
+
+y_test
+
+
+
+#import metrics module for accuracy calculation
+from sklearn import metrics
+print("Accuracy:",metrics.accuracy_score(y_test,y_predict))
